@@ -5,4 +5,25 @@ $(document).ready(function(){
         $('#next').addClass('button-show');
         $('#getStarted').addClass('button-remove');
     });
+    $('.modal-trigger').click(function(){
+        $('.modal').css({'display':'flex'});
+        $('.modal').removeClass('fadeOut');
+        $('.modal-content').removeClass('fadeOutUp');
+        $('.modal').addClass('fadeIn');
+        $('.modal-content').addClass('fadeInUp');
+    })
+    $('.modal-close').click(function(){
+        $('.modal').removeClass('fadeIn');
+        $('.modal-content').removeClass('fadeInUp');
+        $('.modal').addClass('fadeOut');
+        $('.modal-content').addClass('fadeOutUp');
+        $('.modal').css({'display': ''});
+    })
+    $('.modal').click(function(){
+        $('.modal').removeClass('fadeIn');
+        $('.modal-content').removeClass('fadeInUp');
+        $('.modal').addClass('fadeOut');
+        $('.modal-content').addClass('fadeOutUp');
+        $('.modal').css({'display': ''});
+    })
 });

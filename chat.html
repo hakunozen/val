@@ -7,16 +7,32 @@
     <link rel="icon" href="img/VAL.PNG" type="ico" sizes="17x17">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <div class="wrapper chat">
         <div class="container">
+            <div id="modal" class="animated modal">
+                <div class="modal-content animated">
+                    <span class="modal-close fa fa-times"></span>
+                    <h4 class="modal-title">This is a modal title.</h4>
+                    <p>
+                        This is a modal content that needs to be filled up.I'll add more words to this because i want to see how it is with even
+                        more content.
+                    </p>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-green-minimal modal-close">
+                            Okay
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="nav">
                 <span class="fa fa-arrow-left"></span>
                 <p>Val</p>
-                <span class="fa fa-window-maximize"></span>
+                <span class="fa fa-window-maximize modal-trigger"></span>
             </div>
             <div class="chat-area custom-scroll">
                 <div class="left-chat">
@@ -130,7 +146,10 @@
                 </div>
                 <div class="right-chat">
                     <div class="chat-bg">
-                        <p>This is a <span class="style-purple">Stylized</span> text call . <span class="fa fa-phone"></span> </p>
+                        <p>This is a
+                            <span class="style-purple">Stylized</span> text call .
+                            <span class="fa fa-phone"></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -167,6 +186,8 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
 
     <body>
 
